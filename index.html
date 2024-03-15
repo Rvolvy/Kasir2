@@ -103,7 +103,8 @@
 
       const total = hitungTotal();
       
-      const confirmation = confirm(`Anda memesan ${gunkanQty}x Gunkan, ${kimbabQty}x Kimbab, ${nigiriQty}x Nigiri, ${makiRollQty}x Maki Roll. Total harga: Rp.${total}. Apakah Anda yakin ingin melanjutkan?`);
+      // const confirmation = confirm(`Anda memesan ${gunkanQty}x Gunkan, ${kimbabQty}x Kimbab, ${nigiriQty}x Nigiri, ${makiRollQty}x Maki Roll. Total harga: Rp.${total}. Apakah Anda yakin ingin melanjutkan?`);
+      const confirmation = confirm(`Total pembelian: Rp.${total}.\n\nItem yang ditambahkan:\n${gunkanQty}x Gunkan, ${kimbabQty}x Kimbab, ${nigiriQty}x Nigiri, ${makiRollQty}x Maki Roll.`);
       
       if (confirmation) {
         resetOrder();
