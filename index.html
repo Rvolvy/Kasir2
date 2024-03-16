@@ -7,31 +7,18 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex flex-col justify-center items-center w-[100%] h-[100vh] bg-white gap-[15px]">
-  <!-- Gunkan -->
+  <!-- Maki Roll -->
   <div class="flex flex-row justify-between items-center w-[90%] h-[70px]">
     <div class="flex flex-row justify-between items-center w-[70%] h-[100%] outline outline-[1px] outline-[#808080] p-[10px]">
       <div class="flex justify-center items-center gap-[10px]">
-        <img class="flex w-[40px]" src="https://www.svgrepo.com/show/356631/sushi-01-gunkanmaki-tobiko.svg" alt="Gunkan">
-        <p class="text-center text-[15px] font-mono font-bold">Gunkan</p>
+        <img class="flex w-[40px]" src="https://www.svgrepo.com/show/475135/sushi.svg" alt="Maki Roll">
+        <p class="text-center text-[15px] font-mono font-bold">Maki Roll</p>
       </div>
-      <p class="text-center text-[15px] font-mono font-bold">Rp.3500</p>
+      <p class="text-center text-[15px] font-mono font-bold">Rp.2000</p>
     </div>
-    <button onclick="decrement('gunkanQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">-</button>
-    <p id="gunkanQty" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%]">0</p>
-    <button onclick="increment('gunkanQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">+</button>
-  </div>
-  <!-- Kimbab -->
-  <div class="flex flex-row justify-between items-center w-[90%] h-[70px]">
-    <div class="flex flex-row justify-between items-center w-[70%] h-[100%] outline outline-[1px] outline-[#808080] p-[10px]">
-      <div class="flex justify-center items-center gap-[10px]">
-        <img class="flex w-[40px]" src="https://www.svgrepo.com/show/202585/sushi.svg" alt="Kimbab">
-        <p class="text-center text-[15px] font-mono font-bold">Kimbab</p>
-      </div>
-      <p class="text-center text-[15px] font-mono font-bold">Rp.3000</p>
-    </div>
-    <button onclick="decrement('kimbabQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">-</button>
-    <p id="kimbabQty" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%]">0</p>
-    <button onclick="increment('kimbabQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">+</button>
+    <button onclick="decrement('makiRollQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">-</button>
+    <p id="makiRollQty" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%]">0</p>
+    <button onclick="increment('makiRollQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">+</button>
   </div>
   <!-- Nigiri -->
   <div class="flex flex-row justify-between items-center w-[90%] h-[70px]">
@@ -46,18 +33,31 @@
     <p id="nigiriQty" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%]">0</p>
     <button onclick="increment('nigiriQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">+</button>
   </div>
-  <!-- Maki Roll -->
+  <!-- Kimbab -->
   <div class="flex flex-row justify-between items-center w-[90%] h-[70px]">
     <div class="flex flex-row justify-between items-center w-[70%] h-[100%] outline outline-[1px] outline-[#808080] p-[10px]">
       <div class="flex justify-center items-center gap-[10px]">
-        <img class="flex w-[40px]" src="https://www.svgrepo.com/show/475135/sushi.svg" alt="Maki Roll">
-        <p class="text-center text-[15px] font-mono font-bold">Maki Roll</p>
+        <img class="flex w-[40px]" src="https://www.svgrepo.com/show/202585/sushi.svg" alt="Kimbab">
+        <p class="text-center text-[15px] font-mono font-bold">Kimbab</p>
       </div>
-      <p class="text-center text-[15px] font-mono font-bold">Rp.2000</p>
+      <p class="text-center text-[15px] font-mono font-bold">Rp.3000</p>
     </div>
-    <button onclick="decrement('makiRollQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">-</button>
-    <p id="makiRollQty" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%]">0</p>
-    <button onclick="increment('makiRollQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">+</button>
+    <button onclick="decrement('kimbabQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">-</button>
+    <p id="kimbabQty" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%]">0</p>
+    <button onclick="increment('kimbabQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">+</button>
+  </div>
+  <!-- Gunkan -->
+  <div class="flex flex-row justify-between items-center w-[90%] h-[70px]">
+    <div class="flex flex-row justify-between items-center w-[70%] h-[100%] outline outline-[1px] outline-[#808080] p-[10px]">
+      <div class="flex justify-center items-center gap-[10px]">
+        <img class="flex w-[40px]" src="https://www.svgrepo.com/show/356631/sushi-01-gunkanmaki-tobiko.svg" alt="Gunkan">
+        <p class="text-center text-[15px] font-mono font-bold">Gunkan</p>
+      </div>
+      <p class="text-center text-[15px] font-mono font-bold">Rp.3500</p>
+    </div>
+    <button onclick="decrement('gunkanQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">-</button>
+    <p id="gunkanQty" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%]">0</p>
+    <button onclick="increment('gunkanQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">+</button>
   </div>
   <div class="flex flex-wrap justify-center items-center gap-[10px]">
     <button onclick="resetOrder()" class="flex justify-center items-center outline outline-[1px] outline-[#808080] text-black font-mono font-bold p-[10px] hover:bg-[#456beb] hover:text-white">Reset</button>
@@ -95,6 +95,10 @@
       return total
     }
 
+    function formatCurrency(number) {
+      return number.toLocaleString('id-ID')
+    }
+
     function submitOrder() {
       const gunkanQty = parseInt(document.getElementById('gunkanQty').innerText)
       const kimbabQty = parseInt(document.getElementById('kimbabQty').innerText)
@@ -103,7 +107,7 @@
 
       const total = hitungTotal()
       
-      const confirmation = confirm(`Total pembelian: Rp.${total}.\n\nItem yang ditambahkan:\n${gunkanQty}x Gunkan, ${kimbabQty}x Kimbab, ${nigiriQty}x Nigiri, ${makiRollQty}x Maki Roll.`)
+      const confirmation = confirm(`Total pembelian: Rp.${formatCurrency(total)}\n\nItem yang ditambahkan:\n${makiRollQty}x Maki Roll\n${nigiriQty}x Nigiri\n${kimbabQty}x Kimbab\n${gunkanQty}x Gunkan`)
       
       if (confirmation) {
         resetOrder()
