@@ -60,20 +60,20 @@
     <button onclick="increment('makiRollQty')" class="flex justify-center items-center [30px] text-[#232323] font-bold font-mono outline outline-[1px] outline-[#808080] h-[100%] w-[8%] hover:bg-[#456beb] hover:text-white duration-[0.3s]">+</button>
   </div>
   <div class="flex flex-wrap justify-center items-center gap-[10px]">
-    <button onclick="submitOrder()" class="flex justify-center items-center outline outline-[1px] outline-[#808080] text-black font-mono font-bold p-[10px] hover:bg-[#456beb] hover:text-white">Submit</button>
     <button onclick="resetOrder()" class="flex justify-center items-center outline outline-[1px] outline-[#808080] text-black font-mono font-bold p-[10px] hover:bg-[#456beb] hover:text-white">Reset</button>
+    <button onclick="submitOrder()" class="flex justify-center items-center outline outline-[1px] outline-[#808080] text-black font-mono font-bold p-[10px] hover:bg-[#456beb] hover:text-white">Submit</button>
   </div>
   <script>
     function increment(itemId) {
-      const itemQty = document.getElementById(itemId);
-      itemQty.innerText = parseInt(itemQty.innerText) + 1;
+      const itemQty = document.getElementById(itemId)
+      itemQty.innerText = parseInt(itemQty.innerText) + 1
     }
 
     function decrement(itemId) {
-      const itemQty = document.getElementById(itemId);
-      const currentValue = parseInt(itemQty.innerText);
+      const itemQty = document.getElementById(itemId)
+      const currentValue = parseInt(itemQty.innerText)
       if (currentValue > 0) {
-        itemQty.innerText = currentValue - 1;
+        itemQty.innerText = currentValue - 1
       }
     }
 
@@ -83,39 +83,38 @@
         kimbab: 3000,
         nigiri: 2000,
         makiRoll: 2000
-      };
+      }
 
-      const gunkanQty = parseInt(document.getElementById('gunkanQty').innerText);
-      const kimbabQty = parseInt(document.getElementById('kimbabQty').innerText);
-      const nigiriQty = parseInt(document.getElementById('nigiriQty').innerText);
-      const makiRollQty = parseInt(document.getElementById('makiRollQty').innerText);
+      const gunkanQty = parseInt(document.getElementById('gunkanQty').innerText)
+      const kimbabQty = parseInt(document.getElementById('kimbabQty').innerText)
+      const nigiriQty = parseInt(document.getElementById('nigiriQty').innerText)
+      const makiRollQty = parseInt(document.getElementById('makiRollQty').innerText)
 
-      const total = (gunkanQty * harga.gunkan) + (kimbabQty * harga.kimbab) + (nigiriQty * harga.nigiri) + (makiRollQty * harga.makiRoll);
+      const total = (gunkanQty * harga.gunkan) + (kimbabQty * harga.kimbab) + (nigiriQty * harga.nigiri) + (makiRollQty * harga.makiRoll)
       
-      return total;
+      return total
     }
 
     function submitOrder() {
-      const gunkanQty = parseInt(document.getElementById('gunkanQty').innerText);
-      const kimbabQty = parseInt(document.getElementById('kimbabQty').innerText);
-      const nigiriQty = parseInt(document.getElementById('nigiriQty').innerText);
-      const makiRollQty = parseInt(document.getElementById('makiRollQty').innerText);
+      const gunkanQty = parseInt(document.getElementById('gunkanQty').innerText)
+      const kimbabQty = parseInt(document.getElementById('kimbabQty').innerText)
+      const nigiriQty = parseInt(document.getElementById('nigiriQty').innerText)
+      const makiRollQty = parseInt(document.getElementById('makiRollQty').innerText)
 
-      const total = hitungTotal();
+      const total = hitungTotal()
       
-      // const confirmation = confirm(`Anda memesan ${gunkanQty}x Gunkan, ${kimbabQty}x Kimbab, ${nigiriQty}x Nigiri, ${makiRollQty}x Maki Roll. Total harga: Rp.${total}. Apakah Anda yakin ingin melanjutkan?`);
-      const confirmation = confirm(`Total pembelian: Rp.${total}.\n\nItem yang ditambahkan:\n${gunkanQty}x Gunkan, ${kimbabQty}x Kimbab, ${nigiriQty}x Nigiri, ${makiRollQty}x Maki Roll.`);
+      const confirmation = confirm(`Total pembelian: Rp.${total}.\n\nItem yang ditambahkan:\n${gunkanQty}x Gunkan, ${kimbabQty}x Kimbab, ${nigiriQty}x Nigiri, ${makiRollQty}x Maki Roll.`)
       
       if (confirmation) {
-        resetOrder();
+        resetOrder()
       }
     }
 
     function resetOrder() {
-      document.getElementById('gunkanQty').innerText = '0';
-      document.getElementById('kimbabQty').innerText = '0';
-      document.getElementById('nigiriQty').innerText = '0';
-      document.getElementById('makiRollQty').innerText = '0';
+      document.getElementById('gunkanQty').innerText = '0'
+      document.getElementById('kimbabQty').innerText = '0'
+      document.getElementById('nigiriQty').innerText = '0'
+      document.getElementById('makiRollQty').innerText = '0'
     }
   </script>
 </body>
